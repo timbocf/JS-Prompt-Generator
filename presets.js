@@ -399,7 +399,7 @@ const outfitPresets = [
 ];
 
 const actionPresets = [
-    { label: "sitting on the floor, knees drawn up", value: "She is sitting on the floor with her knees drawn to her chest. She is smiling at the camera, and her head is tilted upward.", aspectRatios: ["square", "portrait", "landscape"], tags: ["1940s", "pinup", "sitting"], concept: "pinup" },
+    { label: "sitting on the floor, knees drawn up", value: "She is sitting on the floor with her knees drawn to her chest. She is smiling at the camera, and her head is tilted upward", aspectRatios: ["square", "portrait", "landscape"], tags: ["1940s", "pinup", "sitting"], concept: "pinup" },
     { label: "Facedown Selfie, on a Bed", value: "laying facedown on a bed, kicking her feet in the air. She is looking at the camera at the end of her outstretched arm looking lengthwise down her body", tags: ["pinup", "laying"], environmentTags: ["bedroom"] },
     { label: "laying on a beach", value: "laying on a beach", aspectRatios: ["landscape", "square"], tags: ["pinup", "laying"], environmentTags: ["beach"] },
     { label: "Standing, Looking Away from the Camera", value: "standing, looking away from the camera", tags: ["laying"] },

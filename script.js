@@ -13,10 +13,12 @@ function generateBatch() {
     const haircolor = document.getElementById("getHaircolor");
     const hairstyle = document.getElementById("getHairstyle");
     const overallBuild = document.getElementById("getOverallBuild");
+    const specificBody = document.getElementById("getSpecificBody");
+    const outfit = document.getElementById("getOutfit");
     const action = document.getElementById("getAction");
     const result = document.getElementById("result");
 
-    const imagePrompt = `A ${artStyle.value} of a ${age.value}-year-old ${gender.value}, ${action.value}. She has ${haircolor.value} hair Natural anatomy.`;
+    const imagePrompt = `A ${artStyle.value} of a ${age.value}-year-old ${haircolor.value} ${nationality.value} ${specificBody.value} ${gender.value}, with an ${overallBuild.value} frame, and ${hairstyle.value} hairstyle, ${action.value}. She is wearing a ${outfit.value}. Natural anatomy.`;
     result.textContent = imagePrompt;
 }
 
