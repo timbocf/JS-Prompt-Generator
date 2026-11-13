@@ -4,7 +4,9 @@
 
 const imageCounts = [1, 3, 5, 10, 20];
 
-let gender = "woman";
+const genderPresets = [
+    { label: "Woman", value: "woman" }
+];
 
 const visualPresets = [
     { label: "Photo", value: "photo" },
@@ -75,6 +77,13 @@ const nationalityPresets = [
         eyeColors: ["brown", "hazel", "green", "blue", "amber"]
     }
 
+];
+
+// =========================================
+// HAIRCOLOR
+// =========================================
+const haircolorPresets = [
+    "blonde", "brunette", "black", "ginger", "ombre", "balayage"
 ];
 
 

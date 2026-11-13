@@ -10,12 +10,13 @@ function generateBatch() {
     const age = document.getElementById("getAge");
     const gender = document.getElementById("getGender");
     const nationality = document.getElementById("getNationality");
+    const haircolor = document.getElementById("getHaircolor");
     const hairstyle = document.getElementById("getHairstyle");
     const overallBuild = document.getElementById("getOverallBuild");
     const action = document.getElementById("getAction");
     const result = document.getElementById("result");
 
-    const imagePrompt = `A ${artStyle.value} of a ${age.value}-year-old ${gender.value}. ${action.value}. Natural anatomy.`;
+    const imagePrompt = `A ${artStyle.value} of a ${age.value}-year-old ${gender.value}, ${action.value}. She has ${haircolor.value} hair Natural anatomy.`;
     result.textContent = imagePrompt;
 }
 
@@ -36,11 +37,27 @@ nationalityPresets.forEach(({ label, value }) => {
 });
 
 const ageSelect = document.getElementById("getAge");
-agePresets.forEach(({ label, value }) => {
+agePresets.forEach(age => {
+    const option = document.createElement("option");
+    option.value = age;
+    option.textContent = age;
+    ageSelect.appendChild(option);
+});
+
+const haircolorSelect = document.getElementById("getHaircolor");
+haircolorPresets.forEach(haircolor => {
+    const option = document.createElement("option");
+    option.value = haircolor;
+    option.textContent = haircolor;
+    haircolorSelect.appendChild(option);
+});
+
+const genderSelect = document.getElementById("getGender");
+genderPresets.forEach(({ label, value }) => {
     const option = document.createElement("option");
     option.value = value;
     option.textContent = label;
-    ageSelect.appendChild(option);
+    genderSelect.appendChild(option);
 });
 
 const hairstyleSelect = document.getElementById("getHairstyle");
